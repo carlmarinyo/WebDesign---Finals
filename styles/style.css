@@ -21,32 +21,26 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.8); 
+   
     z-index: 1000;
     padding: 0 20px;
 }
 
 .logo {
-    
     width: auto;
     cursor: pointer;
     margin-top: 10px;
- 
-   
-
 }
 
 .logo img {
     height: 80px;
     width: auto;
-    
-  
 }
 
 .nav {
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 20px; 
 }
 
 .nav a {
@@ -63,10 +57,14 @@ p {
 }
 
 a:hover {
-    color: rgb(46, 81, 175);
-    border-bottom: 5px solid rgb(46, 81, 175);
+    color: #FFBD59;
+    border-bottom: 5px solid  #FFBD59;;
 }
-
+.side-bar a:hover {
+    color: #FFBD59;
+    border-bottom: 5px solid  #FFBD59;;
+    
+}
 span {
     color: #FFBD59;
 }
@@ -80,6 +78,8 @@ span {
     position: fixed;
     border-radius: 16px;
     box-shadow: 1px 2px 3px 3px rgb(0, 0, 0);
+    z-index: 3;
+   
 }
 
 .side-bar a {
@@ -117,9 +117,10 @@ span {
 }
 
 .name {
-    margin-left: 60%;
+    margin-left: 60%; 
     margin-top: 5%;
-    font-size: 3vw; 
+    font-size: 3vw;
+    
     text-shadow: 1px 5px #000000;
 
 }
@@ -128,8 +129,11 @@ span {
     line-height: 100vh;
     margin: 0;
     height: 100vh;
+    font-size: 5vw;
     position: static;
     text-align: center;
+    z-index: 0;
+    width: 100%;
 }
 
 .zero {
@@ -181,27 +185,28 @@ span {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
-    background-color: rgb(22, 22, 22);
+    background-color: #01000a;
 }
+
 
 
 @media screen and (max-width: 768px) {
     .nav-bar {
         height: auto; 
         display: flex; 
-       
+       background-color: rgb(22, 22, 22);
         font-size: 50px;
        
         align-items: flex-start; 
     }
-
+   
     .nav {
         padding-top: 100px;
         display: none; 
-        flex-direction: column;
+        flex-direction: column; 
         align-items: center; 
         width: 100%;
-        margin-top: 40px;
+        margin-top: 40px; 
     }
 
     .nav.active {
@@ -237,8 +242,6 @@ span {
         margin-right: 50px;
     }
 
-
-   
 .cars {
     height: 270px;
 }
