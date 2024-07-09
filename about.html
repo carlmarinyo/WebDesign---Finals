@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dealership</title>
-    <link rel="icon" href="./assets/mainlogo-white.png" type="image/x-icon"/>
+    <link rel="icon" href="./assets/mainlogo-white.png" type="image/x-icon" class="lazy"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/about.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="load.js"></script>
+
+    
 </head>
 <body>
     
     <div class="nav-bar" data-aos="fade-down">
         <div class="logo">
-            <img src="./assets/mainlogo-white.png" alt="logo">
+            <img data-src="./assets/mainlogo-white.png" alt="logo" class="lazy-image">
         </div>
         <div class="nav" id="nav">
             <a href="index.html">Home</a>
@@ -40,7 +43,7 @@
 
         <!-- main content -->
         <div class="main-content">
-            <div class="zero">
+            <div class="background zero">
                 <h1 class="intro" data-aos="flip-left" data-aos-duration="1000">About Us</h1>
             </div>
 
@@ -52,20 +55,27 @@
                     Our mission is to provide rally car aficionados with an unparalleled experience, offering a diverse selection of top-tier rally cars, parts, and accessories. Whether you're a seasoned rally racer or a newcomer eager to dive into the thrilling world of rallying, we have the perfect vehicle to suit your needs and preferences.
                 </p>
     <h1 data-aos="flip-left" data-aos-duration="10000">OUR <span>VALUES</span></h1>
-    <img src="./assets/passion.jpg" class="value-img" alt="" data-aos="flip-left">
-    <h2 data-aos="fade-up">Passion for Rallying</h2>
-        <p class="description" data-aos="fade-up" data-aos-duration="10">At <span>Gravel Motors</span>, rallying isn't just a business; it's a way of life. Our team comprises dedicated professionals who share your enthusiasm for speed, precision, and the adrenaline rush that comes with rally racing
+    <h2 data-aos="fade-up" data-aos-duration="500">Passion for Rallying</h2>
+    <br>
+    <img data-src="./assets/passion.jpg" class="lazy-image value-img" alt=""data-aos="fade-up" data-aos-duration="1000">
+    <br><br>
+        <p class="description" data-aos="fade-right" data-aos-duration="1500" >At <span>Gravel Motors</span>, rallying isn't just a business; it's a way of life. Our team comprises dedicated professionals who share your enthusiasm for speed, precision, and the adrenaline rush that comes with rally racing
             .</p>
-            <img src="./assets/quality.jpg" class="value-img" alt="" data-aos="flip-left">
-        <h2>Quality and Performance</h2>
-        <p class="description" data-aos="fade-up" data-aos-duration="10"> We meticulously select and maintain our inventory to ensure that every car we offer meets the highest standards of performance and reliability. Our commitment to quality means you can trust that your vehicle will deliver exceptional performance on every stage.</p>
-        <img src="./assets/customer.jpg" class="value-img" alt="" data-aos="flip-left" >
-        <h2>Customer-Centric Approach</h2>
-        <p class="description" data-aos="fade-up" data-aos-duration="10">We believe that our customers are our most valuable asset. From your first inquiry to after-sales support, our knowledgeable and friendly staff are here to guide you every step of the way, ensuring a seamless and enjoyable experience.
+            <h2 data-aos="fade-up" data-aos-duration="500">Quality and Performance</h2><br>
+            <img data-src="./assets/quality.jpg" class="lazy-image value-img" alt="" data-aos="fade-up" data-aos-duration="1000">
+      
+        <p class="description" data-aos="fade-right" data-aos-duration="1500"> We meticulously select and maintain our inventory to ensure that every car we offer meets the highest standards of performance and reliability. Our commitment to quality means you can trust that your vehicle will deliver exceptional performance on every stage.</p>
+
+        <h2 data-aos="fade-up" data-aos-duration="500">Customer-Centric Approach</h2><br>
+        <img data-src="./assets/customer.jpg" class="lazy-image value-img" alt="" data-aos="fade-up" data-aos-duration="1000">
+        <br><br>
+       
+        <p class="description" data-aos="fade-right" data-aos-duration="1500">We believe that our customers are our most valuable asset. From your first inquiry to after-sales support, our knowledgeable and friendly staff are here to guide you every step of the way, ensuring a seamless and enjoyable experience.
         </p>
-        <img src="./assets/tech.jpg" class="value-img" alt="" data-aos="flip-left">
-        <h2>Innovation and Expertise</h2>
-        <p class="description last" data-aos="fade-up" data-aos-duration="10"> Staying ahead in the dynamic world of rally cars requires continuous learning and adaptation. Our team is always up-to-date with the latest trends, technologies, and advancements in the rally industry, bringing you cutting-edge options and expert advice.</p>
+        <h2 data-aos="fade-up" data-aos-duration="500">Innovation and Expertise</h2><br>
+        <img data-src="./assets/tech.jpg" class="lazy-image value-img" alt="" data-aos="fade-up" data-aos-duration="1000">
+       <br><br>
+        <p class="description last" data-aos="fade-right" data-aos-duration="1500"> Staying ahead in the dynamic world of rally cars requires continuous learning and adaptation. Our team is always up-to-date with the latest trends, technologies, and advancements in the rally industry, bringing you cutting-edge options and expert advice.</p>
     
             </div>
           
@@ -85,7 +95,8 @@
             <a href="#">Location</a>
             <a href="#">Inquire</a>
             </div>
-            <div class="footer-logo"><img src="./assets/mainlogo-white.png" alt="logo"></div>
+            <div class="lazy footer-logo">
+                <img data-src="./assets/mainlogo-white.png" alt="logo" class="lazy-image"></div>
             <div ><h1 class="owner">Mariño, Carl Jerome N.</h1></div>
             <div class="email"><p>marinojerome2@gmail.com</p></div>
         </div>
