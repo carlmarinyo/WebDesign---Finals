@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: Yota;
+    src: url(/avenir\ lt\ std\ black.otf)
+}
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +11,7 @@
     font-family: Arial;
     color: white;
 }
-html {
-    scroll-behavior: smooth;
-}
+
 p {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -38,13 +40,11 @@ p {
     height: 80px;
     width: auto;
 }
-
 .nav {
     display: flex;
     align-items: center;
     margin-right: 20px; 
 }
-
 .nav a {
     margin: 0 15px; 
     font-size: 18px;
@@ -54,26 +54,18 @@ p {
     transition: 0.3s;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 }
-
 .nav-bar a.icon {
     display: none; 
-}
-i {
-    color: #FFBD59;
 }
 .side-bar a:hover, .nav-bar a:hover  {
     color: #FFBD59;
     border-bottom: 5px solid  #FFBD59;;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
-    
 }
 span {
     color: #FFBD59;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 }
-
-
-
 .side-bar {
     background-color: white;
     width: 100px;
@@ -85,7 +77,6 @@ span {
     box-shadow: 1px 2px 3px 3px rgb(0, 0, 0);
     z-index: 3;
 }
-
 .side-bar a {
     font-size: 20px;
     color: rgb(30, 48, 63);
@@ -103,20 +94,145 @@ span {
     z-index: 0;
     width: 100%;
     color: #FFBD59;
+    text-shadow: -1px 1px 5px rgba(0,0,0,0.7);
 }
-
-
+/*  ABOVE CODE IS FIXED     */
 .zero {
     background-color: black;
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: linear-gradient(to top,rgba(22, 22, 22, 1),rgba(22, 22, 22, 0.8),rgba(0, 0, 0,0.1), rgba(0, 0, 0, 0.09)),
-    url(../assets/about.jpg);
+    background-image: linear-gradient(to bottom,rgb(22, 22, 22,0.8),rgba(22, 22, 22, 0.5),rgba(22, 22, 22,0.1), rgba(22, 22, 22, 0.09)),
+    url(../assets/shop.jpg);
+}
+.shop-part {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 25px;
+
+}
+.shop-part h1 {
+    color: #FFBD59;
+    text-shadow: 0px 1px 0px rgba(0,0,0,0.6);
+    font-size: 3rem;
+  margin: 10px auto;
+}
+.container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Automatically adjust columns */
+    width: 70%;
+    margin: 0 auto;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: 200px; 
+    object-fit: contain;
+    transition: transform 0.5s;
+
+}
+
+.grid-item p {
+    color: black;
+    font-weight: 500;
+    margin-top: 10px;
+    font-family: 'Yota', sans-serif; 
+    font-weight: 600;
+    position: relative;
+    margin-top: 10px; 
+    font-weight: bold;
+   
+}
+.grid-item:hover img {
+    transform: scale(1.1); 
+}
+.grid-item:hover {
+    transform: scale(1.1);
+}
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; 
+}
+.tires img {
+max-width: 60%;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    width: 7rem;
+    border-top: 2px solid #8e1c1c;
+    margin: 0 auto;
+}
+.grid-item table {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255,0.85);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: opacity 0.3s ease-in-out; 
+    z-index: 1; 
+}
+
+.grid-item:hover table {
+    opacity: 1; 
 }
 
 
+
+table td {
+    padding: 6px; 
+    text-align: left; 
+    border-bottom: 1px solid #000000; 
+    color: black;
+}
+
+table td:first-child {
+    font-weight: bold; 
+    /* background-color: #ddd;  */
+    color: black;
+}
+.buy-now-link {
+    display: block;
+    text-decoration: none;
+    color: white;
+    
+
+    text-align: center;
+    background-color: green; 
+    border-radius: 5px; /* Add border radius if needed */
+    transition: background-color 0.3s ease;
+}
+
+.buy-now-link:hover {
+    background-color: #1b3b27; /* Change color on hover */
+  
+}
+
+
+
+
+
+
+
+
+
+/*FOOTER ONLY */
 .footer {
     width: 100%;
     height: 20px;
@@ -149,7 +265,7 @@ padding: 2% 0;
     text-align: center;
     justify-content: space-between;
    margin: 0 auto;
-    width: 80%;
+    width: 85%;
 
 
 }
@@ -158,55 +274,6 @@ width: 100%;
 text-decoration: none;
 
 }
-.welcome {
-    padding-top: 50px;
-}
-.about-content {
-    
-    background-color: rgb(22, 22, 22);
-    width: 100%;
-    margin: 0 auto;
-    height: auto;
-text-align: center;
-}
-.container img {
-    width: 60%;
-    height: auto ;
-   
-}
-.about-content h1 {
-    margin-top: 15%;
-    font-size: 5vw;
-    width: 100%;   
-    margin: 10% auto;
-    }
-    .about-content h2 {
-    
-    font-size: 35px;
-    
-    }
-    .container {
-        
-        width: 80%;
-        margin:  0 auto;
-        
-    }
-    
-    .description {
-
-    width: 70%;
-    margin: 2% auto;
-    padding: 0;
-    font-size: 20px;
-margin-bottom: 10%;
-    }
-
-.last {
-    margin-bottom: 0;
-    padding-bottom: 50px;
-}
-
-
 @media screen and (max-width: 768px) {
     .nav-bar {
         height: auto; 
@@ -216,7 +283,6 @@ margin-bottom: 10%;
         background-color: rgb(22, 22, 22);
         align-items: flex-start; 
     }
-   
     .nav {
         padding-top: 100px;
         display: none; 
@@ -251,11 +317,8 @@ margin-bottom: 10%;
     .zero h1 {
         font-size: 3em;
     }
-    .container h2 {
-        font-size: 2em;
-    }
-    .container p {
-        font: 2rem;
-    }
-
+  .car-name {
+    display: none;
+  }
+  
      }

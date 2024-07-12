@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealership</title>
+    <link rel="icon" href="./assets/mainlogo-white.png" type="image/x-icon" class="lazy"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/shop.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/a74d60f356.js" crossorigin="anonymous"></script>
+    <script src="load.js"></script>
+</head>
+<body>
+    <div class="nav-bar" data-aos="fade-down">
+        <div class="logo">
+            <img data-src="./assets/mainlogo-white.png" alt="logo" class="lazy-image">
+        </div>
+        <div class="nav" id="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="location.html">Location</a>
+            <a href="shop.html"><span>Shop</span></a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="body-main">
+        <!-- side bar -->
+        <div class="side-bar" data-aos="fade-right" data-aos-duration="1000">
+            
+            <a href="index.html"><br><br>Home</a><br><br><br>
+            <a href="about.html">About</a><br><br><br>
+            <a href="contact.html">Contact</a><br><br><br>
+            <a href="#">Location</a><br><br><br>
+            <a href="shop.html"><span>Shop</span></a>
+        </div>
+
+        <!-- main content -->
+        <div class="main-content">
+            <div class="background zero">
+                <h1 class="intro" data-aos="flip-left" data-aos-duration="1000">Our Shop</h1>
+            </div>
+            <div class="shop-part">
+                    <h1 class="shop-title">Vehicles</h1>
+                    <hr> 
+                    <br>
+                    
+                    <div class="container">
+
+
+                        <div class="grid-item">
+                            <div>
+                                <img src="./assets/shop-evo.webp" alt="Item 1">
+                            </div>
+                            <p>MitsubishI Evolution VI</p>
+                    <table>
+                        <tr>
+                           <td class="car-name" colspan="2" style="padding: 0; text-align: center; background-color: transparent; border: none;">Mitsubishi Evolution VI</td>
+                        </tr>
+                      <tr>
+                        <td>Engine</td>
+                        <td>2.0L I-4 Turbocharged</td>
+                      </tr>
+                      <tr>
+                        <TD>Horsepower</TD>
+                        <td>280 HP</td>
+                      </tr>
+                      <tr>
+                        <TD>Torque</TD>
+                        <td>400 NM</td>
+                      </tr>
+                      <tr>
+                        <th colspan="2"><a href="#" class="buy-now-link">₱1,034,190<br>Buy Now!</a></th>
+                      </tr>
+                    </table>
+                        </div>
+
+
+                        
+                        <div class="grid-item">
+                            <div>
+                                  <img src="./assets/shop-wrx.webp" alt="Item 2">
+                            </div>
+                            <table>
+                                <tr>
+                                   <td class="car-name" colspan="2" style="padding: 0; text-align: center; background-color: transparent; border: none;">Subaru 22B WRX STI</td>
+                                </tr>
+                              <tr>
+                                <td>Engine</td>
+                                <td>2.2L I-4 Turbocharged</td>
+                              </tr>
+                              <tr>
+                                <TD>Horsepower</TD>
+                                <td>280 HP</td>
+                              </tr>
+                              <tr>
+                                <TD>Torque</TD>
+                                <td>363 NM</td>
+                              </tr>
+                              <tr>
+                                <th colspan="2"><a href="#" class="buy-now-link">₱5,000,000<br>Buy Now!</a></th>
+                              </tr>
+                            </table>
+                            <p>Subaru 22B WRX STI</p>
+                            
+                        </div>
+
+                        <div class="grid-item">
+                            <div><img src="./assets/shop-quattro.webp" alt="Item 3"></div>
+                            <table>
+                                <tr>
+                                   <td class="car-name" colspan="2" style="padding: 0; text-align: center; background-color: transparent; border: none;">Audi Quattro</td>
+                                </tr>
+                              <tr>
+                                <td>Engine</td>
+                                <td>2.1L I-5 Turbocharged</td>
+                              </tr>
+                              <tr>
+                                <TD>Horsepower</TD>
+                                <td>197 HP</td>
+                              </tr>
+                              <tr>
+                                <TD>Torque</TD>
+                                <td>285 NM</td>
+                              </tr>
+                              <tr>
+                                <th colspan="2"><a href="#" class="buy-now-link">₱1,500,000<br>Buy Now!</a></th>
+                              </tr>
+                            </table>
+                            <p>Audi Quattro</p>
+                        </div>
+                        <div class="grid-item">
+                            <div>  <img src="./assets/shop-escort.webp" alt="Item 4"></div>
+                            <table>
+                                <tr>
+                                   <td class="car-name" colspan="2" style="padding: 0; text-align: center; background-color: transparent; border: none;">Ford Escort</td>
+                                </tr>
+                              <tr>
+                                <td>Engine</td>
+                                <td>1.6L I-4 Turbocharged</td>
+                              </tr>
+                              <tr>
+                                <TD>Horsepower</TD>
+                                <td>200 HP</td>
+                              </tr>
+                              <tr>
+                                <TD>Torque</TD>
+                                <td>290 NM</td>
+                              </tr>
+                              <tr>
+                                <th colspan="2"><a href="#" class="buy-now-link">₱900,000<br>Buy Now!</a></th>
+                              </tr>
+                            </table>
+                            <p>Ford Escort</p>
+                        </div>
+                        <div class="grid-item">
+                            <div> <img src="./assets/shop-yaris.webp" alt="Item 4"></div>
+                            <table>
+                                <tr>
+                                   <td class="car-name" colspan="2" style="padding: 0; text-align: center; background-color: transparent; border: none;">Toyota GR Yaris</td>
+                                </tr>
+                              <tr>
+                                <td>Engine</td>
+                                <td>1.6L I-3 Turbocharged</td>
+                              </tr>
+                              <tr>
+                                <TD>Horsepower</TD>
+                                <td>268 HP</td>
+                              </tr>
+                              <tr>
+                                <TD>Torque</TD>
+                                <td>360 NM</td>
+                              </tr>
+                              <tr>
+                                <th colspan="2"><a href="#" class="buy-now-link">₱2,650,000<br>Buy Now!</a></th>
+                              </tr>
+                            </table>
+                            <p>Toyota GR Yaris</p>
+                        </div>
+                        <div class="grid-item">
+                            <div>   <img src="./assets/shop-focus.webp" alt="Item 4"></div>
+                            <table>
+                                <tr>
+                                   <td class="car-name" colspan="2" style="padding: 0; text-align: center; background-color: transparent; border: none;">Ford Focus RS</td>
+                                </tr>
+                              <tr>
+                                <td>Engine</td>
+                                <td>2.3L I-4 Turbocharged</td>
+                              </tr>
+                              <tr>
+                                <TD>Horsepower</TD>
+                                <td>350 HP</td>
+                              </tr>
+                              <tr>
+                                <TD>Torque</TD>
+                                <td>470 NM</td>
+                              </tr>
+                              <tr>
+                                <th colspan="2"><a href="#" class="buy-now-link">₱2,450,000<br>Buy Now!</a></th>
+                              </tr>
+                            </table>
+                            <p>Ford Focus RS</p>
+                        </div>
+
+                        <div class="grid-item">
+                            <div> <img src="./assets/shop-deltahf.webp" alt="Item 4"></div>
+                            <table>
+                                <tr>
+                                   <td class="car-name" colspan="2" style="padding: 0; text-align: center; background-color: transparent; border: none;">Lancia Delta HF</td>
+                                </tr>
+                              <tr>
+                                <td>Engine</td>
+                                <td>2.0L I-4 Turbocharged</td>
+                              </tr>
+                              <tr>
+                                <TD>Horsepower</TD>
+                                <td>210 HP</td>
+                              </tr>
+                              <tr>
+                                <TD>Torque</TD>
+                                <td>300 NM</td>
+                              </tr>
+                              <tr>
+                                <th colspan="2"><a href="#" class="buy-now-link">₱3,500,000<br>Buy Now!</a></th>
+                              </tr>
+                            </table>
+                            <p>Lancia Delta HF</p>
+                        </div>
+                        <div class="grid-item">
+                            <div><img src="./assets/shop-celica.webp" alt="Item 4"></div>
+                            <table>
+                                <tr>
+                                   <td class="car-name" colspan="2" style="padding: 0; text-align: center; background-color: transparent; border: none;">Toyota Celica</td>
+                                </tr>
+                              <tr>
+                                <td>Engine</td>
+                                <td>2.0L I-4 Turbocharged</td>
+                              </tr>
+                              <tr>
+                                <TD>Horsepower</TD>
+                                <td>280HP</td>
+                              </tr>
+                              <tr>
+                                <TD>Torque</TD>
+                                <td>306 NM</td>
+                              </tr>
+                              <tr>
+                                <th colspan="2"><a href="#" class="buy-now-link">₱1,200,000<br>Buy Now!</a></th>
+                              </tr>
+                            </table>
+                            <p>Toyota Celica</p>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <h1 class="shop-title">Tires</h1>
+                    <hr>    <br><br>
+                    <div class="container">
+
+                        <div class="tires grid-item tires">
+                          <div><img src="./assets/michelin.webp" alt="Item 1"></div>
+                          <table>
+                          
+                          <tr>
+                            <td>Type</td>
+                            <td>Summer Performance</td>
+                          </tr>
+                          <tr>
+                            <TD>Thread Depth</TD>
+                            <td>10/32"</td>
+                          </tr>
+                          <tr>
+                            <TD>Speed Rating</TD>
+                            <td>Y (186 mph)</td>
+                          </tr>
+                          <tr>
+                            <th colspan="2"><a href="#" class="buy-now-link">₱12,000<br>Buy Now!</a></th>
+                          </tr>
+                        </table>
+                            <p>Michelin Pilot Sport XS</p>
+                        </div>
+
+                        <div class="tires grid-item tires ">
+                          <div><img src="./assets/michelin2.webp" alt="Item 2"></div>
+                          <table>
+                          
+                            <tr>
+                              <td>Type</td>
+                              <td>Summer Performance</td>
+                            </tr>
+                            <tr>
+                              <TD>Thread Depth</TD>
+                              <td>10/32"</td>
+                            </tr>
+                            <tr>
+                              <TD>Speed Rating</TD>
+                              <td>Y (186 mph)</td>
+                            </tr>
+                            <tr>
+                              <th colspan="2"><a href="#" class="buy-now-link">₱12,000<br>Buy Now!</a></th>
+                            </tr>
+                          </table>
+                            <p>Michelin Sport Cup 2R</p>
+                        </div>
+
+                        <div class="tires grid-item ">
+                          <div>   <img src="./assets/michelinice.webp" alt="Item 3"></div>
+                          <table>
+                            <tr>
+                              <td>Type</td>
+                              <td>Summer Performance</td>
+                            </tr>
+                            <tr>
+                              <TD>Thread Depth</TD>
+                              <td>10/32"</td>
+                            </tr>
+                            <tr>
+                              <TD>Speed Rating</TD>
+                              <td>Y (186 mph)</td>
+                            </tr>
+                            <tr>
+                              <th colspan="2"><a href="#" class="buy-now-link">₱12,000<br>Buy Now!</a></th>
+                            </tr>
+                          </table>
+                            <p>Michelin X-Ice North NA01</p>
+                        </div>
+
+                        <div class="tires grid-item">
+                          <div><img src="./assets/michelin3.webp" alt="Item 4"></div>
+                          <table>
+                            <tr>
+                              <td>Type</td>
+                              <td>Summer Performance</td>
+                            </tr>
+                            <tr>
+                              <TD>Thread Depth</TD>
+                              <td>10/32"</td>
+                            </tr>
+                            <tr>
+                              <TD>Speed Rating</TD>
+                              <td>Y (186 mph)</td>
+                            </tr>
+                            <tr>
+                              <th colspan="2"><a href="#" class="buy-now-link">₱12,000<br>Buy Now!</a></th>
+                            </tr>
+                          </table>
+                            <p>Pirelli Sottozero WRC</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+            </div>
+<br><br>
+    <div class="footer">
+        <div class="footer-wrapper">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html.">Contact</a>
+                <a href="location.html">Location</a>
+                <a href="shop.html"><span>Shop</span></a>
+            </div>
+            <div class="lazy footer-logo">
+                <img data-src="./assets/mainlogo-white.png" alt="logo" class="lazy-image">
+            </div>
+            <div><h1 class="owner">Mariño, Carl Jerome N.</h1></div>
+            <div class="email"><p>marinojerome2@gmail.com</p></div>
+        </div>
+    </div>
+
+    <script>
+        function toggleNav() {
+            var nav = document.getElementById("nav");
+            nav.classList.toggle("active");
+        }
+        AOS.init();
+    </script>
+</body>
+</html>

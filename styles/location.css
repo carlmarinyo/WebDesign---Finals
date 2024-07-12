@@ -213,5 +213,16 @@ text-decoration: none;
     .zero h1 {
         font-size: 3em;
     }
-
+    .maps-container iframe {
+height: 150px;
+width: 100%;
+padding: 10px;
+margin-bottom: 25px;
+      }
+      .maps-container {
+        width: 100%;
+    
+        margin: 0 auto;
+        padding-top: 5%;
+    }
      }
