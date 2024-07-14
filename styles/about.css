@@ -257,5 +257,10 @@ margin-bottom: 10%;
     .container p {
         font: 2rem;
     }
-
+    .container img {
+        width: 100%;
+        height: auto ;
+       
+    }
+    
      }

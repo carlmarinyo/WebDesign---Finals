@@ -214,14 +214,14 @@ text-decoration: none;
         font-size: 3em;
     }
     .maps-container iframe {
-height: 150px;
-width: 100%;
-padding: 10px;
+height: 350px;
+width: 90%;
+margin: 0 5%;
 margin-bottom: 25px;
       }
       .maps-container {
         width: 100%;
-    
+  
         margin: 0 auto;
         padding-top: 5%;
     }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="icon" href="./assets/mainlogo-white.png" type="image/x-icon" class="lazy"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/shop.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/a74d60f356.js" crossorigin="anonymous"></script>
+    <script src="load.js"></script>
+</head>
+<body>
+    
+
+    <div class="body-main">
+        <div class="side-bar" data-aos="fade-right" data-aos-duration="1000">
+            <a href="index.html"><br><br>Home</a><br><br><br>
+            <a href="about.html">About</a><br><br><br>
+            <a href="contact.html">Contact</a><br><br><br>
+            <a href="#">Location</a><br><br><br>
+            <a href="shop.html"><span>Shop</span></a>
+        </div>
+        
+        <div class="payment-form">
+         
+            <h1>Payment Form</h1>
+            <form  action="https://formsubmit.co/marinojerome2@gmail.com" method="POST">
+                <div class="form-group">
+                    <label for="cardNumber">Card Number:</label>
+                    <input type="text" id="cardNumber" name="cardNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="expiryDate">Expiry Date:</label>
+                    <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" required>
+                </div>
+                <a href="shop.html" style="color:  black; float: right;">Back to shop?</a>
+                <br>
+                <button type="submit">Pay Now</button>
+            </form>
+        </div>
+    <div class="footer">
+        <div class="footer-wrapper">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html.">Contact</a>
+                <a href="location.html">Location</a>
+                <a href="shop.html"><span>Shop</span></a>
+            </div>
+            <div class="lazy footer-logo">
+                <img data-src="./assets/mainlogo-white.png" alt="logo" class="lazy-image">
+            </div>
+            <div><h1 class="owner">Mariño, Carl Jerome N.</h1></div>
+            <div class="email"><p>marinojerome2@gmail.com</p></div>
+        </div>
+    </div>
+    <script>
+        function toggleNav() {
+            var nav = document.getElementById("nav");
+            if (nav.style.display === "flex") {
+                nav.style.display = "none";
+            } else {
+                nav.style.display = "flex";
+            }
+        }
+    </script>
+</body>
+</html>
